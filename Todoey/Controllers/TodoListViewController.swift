@@ -24,7 +24,7 @@ class TodoListViewController: UITableViewController {
     //        loadItems()
 
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    //See video 237 on CRUD the line above allows referencing an object that can be set equal to context.
+   
     
    // let defaults = UserDefaults.standard
 
