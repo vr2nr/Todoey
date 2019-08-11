@@ -59,7 +59,30 @@ class CategoryViewController: UITableViewController {
         
     }
     
+    //MARK - Model Manipulation Methods
     
+    func save(category: Category) {
+        do {
+            try realm.write {
+                realm.add(category)
+            }
+        } catch {
+            print ("Error saving context \(error)")
+        }
+        
+        tableView.reloadData() // Calls all of the TableView Datasource Methods
+        
+    }
+    
+    func loadCategories() {
+        
+        categories = realm.objects(Category.self)
+        
+        tableView.reloadData()
+        
+        
+        
+    }
     
     
     
@@ -91,30 +114,7 @@ class CategoryViewController: UITableViewController {
         
     }
     
-    //MARK - Model Manipulation Methods
-    
-    func save(category: Category) {
-        do {
-            try realm.write {
-                realm.add(category)
-            }
-        } catch {
-            print ("Error saving context \(error)")
-        }
-        
-        tableView.reloadData()
-        
-    }
-    
-    func loadCategories() {
-        
-        categories = realm.objects(Category.self)
-        
-        tableView.reloadData()
-
-       
-        
-    }
+   
 }
 
 
