@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import ChameleonFramework
 
 // Some New comments here.
 // an additional comment for source control testing.
@@ -32,6 +33,8 @@ class TodoListViewController: SwipeTableViewController {
         
         print(dataFilePath)
         
+        tableView.separatorStyle = .none
+        
     }
 
     //MARK - Tableview Datasource Methods
@@ -46,6 +49,15 @@ class TodoListViewController: SwipeTableViewController {
         
         if let item = todoItems?[indexPath.row] {
             cell.textLabel?.text = item.title
+            
+            if let color = UIColor(hexString: selectedCategory!.color)?.darken(byPercentage:CGFloat(indexPath.row) / CGFloat(todoItems!.count)) {
+                cell.backgroundColor = color
+                cell.textLabel?.textColor = ContrastColorOf(color, returnFlat: true)
+            }
+            
+//            print("version 1: \(CGFloat(indexPath.row / todoItems!.count))" )
+//            print("version 2: \(CGFloat(indexPath.row) / CGFloat(todoItems!.count))" )
+
             
             //Ternary operator ==>
             // value = condition ? valueIfTrue: valueIfFalse
