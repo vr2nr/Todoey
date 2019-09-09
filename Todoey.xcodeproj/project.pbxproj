@@ -14,6 +14,7 @@
 		CE61758622DE982F00EE7E87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE61758422DE982F00EE7E87 /* Main.storyboard */; };
 		CE61758822DE983000EE7E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE61758722DE983000EE7E87 /* Assets.xcassets */; };
 		CE61758B22DE983000EE7E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE61758922DE983000EE7E87 /* LaunchScreen.storyboard */; };
+		CE90642122FFD59F00B56117 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90642022FFD59F00B56117 /* SwipeTableViewController.swift */; };
 		CEE3E4BA22F9176900B9972E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3E4B922F9176900B9972E /* Item.swift */; };
 		CEE3E4BC22F9178800B9972E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3E4BB22F9178800B9972E /* Category.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		CE61758722DE983000EE7E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE61758A22DE983000EE7E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE61758C22DE983000EE7E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE90642022FFD59F00B56117 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		CEE3E4B922F9176900B9972E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CEE3E4BB22F9178800B9972E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +79,7 @@
 			children = (
 				CE3D44F722EC144F00E66FD2 /* CategoryViewController.swift */,
 				CE61758222DE982F00EE7E87 /* TodoListViewController.swift */,
+				CE90642022FFD59F00B56117 /* SwipeTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				CE3D44F822EC144F00E66FD2 /* CategoryViewController.swift in Sources */,
 				CE61758322DE982F00EE7E87 /* TodoListViewController.swift in Sources */,
 				CE61758122DE982F00EE7E87 /* AppDelegate.swift in Sources */,
+				CE90642122FFD59F00B56117 /* SwipeTableViewController.swift in Sources */,
 				CEE3E4BC22F9178800B9972E /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
